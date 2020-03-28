@@ -1,4 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome To XedvedHub
+
+XedvedHub is a GameHub script like [owl hub](https://crishoux.github.io/OwlHub/).
+
+It supports over 20 games!
+
+## Supported Exploits.
+If you want to get Xedved hub for **free!**
+Get it on discord [Xedved](https://discord.gg/2BEa7KH) in #Announcements
+Or if you have a paid exploit that supports iron brew you can get it [here]
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/BruhMoment-s/xedvedhub.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
