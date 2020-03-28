@@ -6,7 +6,7 @@ It supports over 20 games!
 
 ## Supported Exploits.
 If you want to get Xedved hub for **free!**
-Get it on discord [Xedved](https://discord.gg/2BEa7KH) in `🚨announcements🚨`.
+Get it on discord of [Xedved](https://discord.gg/2BEa7KH) in `🚨announcements🚨`.
 Or if you have a paid exploit that supports iron brew you can get it [here](https://raw.githubusercontent.com/BruhMoment-s/xedvedhub.github.io/master/ironbrewxedved)
 
 ## Supported Games
