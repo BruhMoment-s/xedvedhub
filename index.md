@@ -34,4 +34,3 @@ Flee The Facility
 ```
 It also has a _`Universal Menu`_ which has FE scripts like kill player and click tp!
 
-
