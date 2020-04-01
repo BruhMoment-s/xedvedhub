@@ -3,18 +3,76 @@
     background: none;
     box-shadow: none;
     border-radius: 0px;
+  
 }
-
+.buttonCopyPain {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+  
+}
 
 .bruhDiv{
     border-radius: 10px;
     border: 0px;
-    color: white;
+    color: rgb(156, 156, 156);
     background-color: rgb(15, 15, 15);
     height: auto;
     width: 500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+
+  border-bottom: 1px dotted black;
+  
 }
-.H1{
-    color:rgb(143, 40, 212);
+.bigDiv{
+    
+   position: absolute;
+   left: 15%;
+   width: 1000px;
+   padding-left: 20px;
+}
+*{
+  left: 10px;
+}
+.styleDiv{
+    width: 150px; 
+    height: 3px;
+  
+    margin-top: 9px;
+}
+.copytexet{
+  position: absolute;
+  padding-left: 100%;
+  margin: 100% auto;
+  
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.buttonCopyPain .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.buttonCopyPain:hover .tooltiptext {
+  visibility: visible;
 }
