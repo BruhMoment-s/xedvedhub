@@ -4,41 +4,79 @@
       <link rel="stylesheet" href="styles.css">
     <title>XedvedHub</title>
 </head>
+<div class="bigDiv" style="background-color: rgb(20, 20, 20);">
 <body style="background-color: rgb(40, 40, 40); color: white;">
-<H1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(143, 40, 212);vertical-align: middle;">Welcome to XedvedHub</H1>
+<H1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(143, 40, 212);">Welcome to XedvedHub</H1>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> XedvedHub is a GameHub script like owl hub.</p>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> It supports over 20 games!</p>
 <H1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(143, 40, 212); ">Supported Exploits</H1>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> If you have a paid exploit you can get it here.</p>
-<button style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(40,40,40); color: rgb(143, 40, 212);" class="buttonCopy" id="buttonAA" >loadstring(game:HttpGet("https://raw.githubusercontent.com/BruhMoment-s/xedvedhub.github.io/master/ironbrewxedved", true))()</button>
+<button style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(20, 20, 20); color: rgb(143, 40, 212);" class="buttonCopyPain" id="buttonAAB" onclick="copyClip()" >loadstring(game:HttpGet("https://raw.githubusercontent.com/BruhMoment-s/xedvedhub.github.io/master/ironbrewxedved", true))()
+    <span class="tooltiptext" id = "tooltiptxt">Copy</span>
+<div id= "COPIEDDIV" style="color: white; visibility: hidden;"> Copied!</div>
+</button>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Or you can install Xedved and use it there for free!</p>
-<button style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(40,40,40); color: rgb(143, 40, 212);" class="buttonCopy" id="buttonAA" onclick="location.href='https://discord.gg/2BEa7KH'">Get Xedved</button>
+<button style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(20, 20, 20); color: rgb(143, 40, 212);" class="buttonCopy" id="buttonAA" onclick="location.href='https://discord.gg/2BEa7KH'">Get Xedved</button>
 
 <H1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(143, 40, 212); ">Supported Games</H1>
 <div class="bruhDiv">
-    <p>Arsenal, </p>
-    <p>   Mad city, </p>
-        <p>   Prison life, </p>
-            <p> Jailbreak, </p>
-                <p>   Murderer Mystery 2, </p>
-                    <p>  Piggy, </p>
-                        <p> Work at a pizza place, </p>
-                            <p> Build a boat, </p>
-                                <p>  Phantom forces (Paid executor only), </p>
-                                    <p>  Fishing simulator, </p>
-                                        <p>   Ninja legends,</p>
-                                            <p>   Bee swarm simulator, </p>
-                                                <p>   Zombie rush, </p>
-                                                    <p>   Zombie attack,</p>
-                                                        <p>   Skywars, </p>
-                                                            <p>  KAT, </p>
+    <p>Arsenal,</p>
+    <p>Mad city, </p>
+        <p>Prison life, </p>
+            <p>Jailbreak, </p>
+                <p>Murderer Mystery 2, </p>
+                    <p>Piggy, </p>
+                        <p>Work at a pizza place, </p>
+                            <p>Build a boat, </p>
+                                <p>Phantom forces (Paid executor only), </p>
+                                    <p>Fishing simulator, </p>
+                                        <p> Ninja legends,</p>
+                                            <p>Bee swarm simulator, </p>
+                                                <p>Zombie rush, </p>
+                                                    <p>Zombie attack,</p>
+                                                        <p>Skywars, </p>
+                                                            <p>KAT, </p>
                                                                 <p> Entry point, </p>
-                                                                    <p>  Anime fighting simulator,</p>
-                                                                        <p>  Flee The Facility</p>
+                                                                    <p>Anime fighting simulator,</p>
+                                                                        <p>Flee The Facility</p>
 </div>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">It also has a Universal Menu which has FE scripts like kill player and click tp!</p>
 
+</div>
+<input id="copytexet" type="text" style="visibility: hidden;" value="loadstring(game:HttpGet('https://raw.githubusercontent.com/BruhMoment-s/xedvedhub.github.io/master/ironbrewxedved', true))()" >
+<script type="text/javascript">
+    
+    function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+var butn = document.getElementById("buttonAAB");
+    var input_field = document.getElementById("copytexet");
+    var copyField = document.getElementById("COPIEDDIV");
+    var toolTip = document.getElementById("tooltiptxt");
+  
 
 
+function copyClip(){
+
+}
+ function maketextCopy(){
+    toolTip.textContent="Copy";
+ }
+
+butn.onclick=function(){
+    input_field.style.visibility = "visible";
+    input_field.select();
+toolTip.textContent="Copied!";
+    document.execCommand("Copy");
+    input_field.style.visibility = "hidden";
+  setTimeout(maketextCopy,1000)
+  
+    
+}
+</script>
 </body>
 </html>
