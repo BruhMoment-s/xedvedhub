@@ -508,6 +508,7 @@ function ui:Remotes()
 			local EasilyCopiable = [[--/// Remote found on BetterLua \\\ --
 -- Args
 local RemotePath = ]].. FullName .. [[
+
 local RemoteArgs = {]].. newstr .. [[}
 -- Remote Call
 RemotePath:]].. Method .. [[(RemoteArgs)]]
@@ -627,6 +628,7 @@ RemotePath:]].. Method .. [[(RemoteArgs)]]
 			local EasilyCopiable = [[--/// Remote found on BetterLua \\\ --
 -- Args
 local RemotePath = ]].. FullName .. [[
+
 local RemoteArgs = {]].. newstr .. [[}
 -- Remote Call
 RemotePath:]].. Method .. [[(RemoteArgs)]]
