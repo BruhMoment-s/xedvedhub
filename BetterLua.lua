@@ -527,7 +527,6 @@ RemotePath:]].. Method .. [[(RemoteArgs)]]
 				ui:ButtonRipple(RemoteButton,"255,120,120")
 				coroutine.wrap(transitionColor)(RDeco,"BackgroundColor3",RDeco.BackgroundColor3,Color3.fromRGB(255,120,120))
 				table.insert(BlacklistRemote,BlacklistL,FullName)
-				print("Blacklsiting",BlacklistRemote[BlacklistL])
 				blacklist = true
 				oldDir = dir
 				dir = "Stationary"
@@ -652,7 +651,7 @@ RemotePath:]].. Method .. [[(RemoteArgs)]]
 				ui:ButtonRipple(RemoteFButton,"255,120,120")
 				coroutine.wrap(transitionColor)(RFDeco,"BackgroundColor3",RFDeco.BackgroundColor3,Color3.fromRGB(255,120,120))
 				table.insert(BlacklistRemote,BlacklistL,FullName)
-				print(BlacklistL)
+				
 				blacklist = true
 				oldDir = dir
 				dir = "Stationary"
@@ -661,7 +660,7 @@ RemotePath:]].. Method .. [[(RemoteArgs)]]
 				ui:ButtonRipple(RemoteFButton,"255,255,255")
 				coroutine.wrap(transitionColor)(RFDeco,"BackgroundColor3",RFDeco.BackgroundColor3,Color3.fromRGB(255,255,255))
 				table.remove(BlacklistRemote,BlacklistL)
-				print(BlacklistL)
+				
 				blacklist = false
 				dir = "Out"
 				RepeatOut()
@@ -876,7 +875,6 @@ local DumpedRemotes = {
 
 
 function  ReadRemote(NewArgs)
-	print("READING REMOTE ".. NewArgs[2])
 	local value = NewArgs
 	local Name = value[1]
 	local FullName = value[2]
@@ -889,15 +887,13 @@ function  ReadRemote(NewArgs)
 	
 	for i,v in pairs(BlacklistedRemotes) do
 	
-		print(v)
+	
 		if v == FullName then
 			Blacklisted = true
-			print("BLACKLISTED")
 		end
 	end
 
 	if not Blacklisted then
-		print("Not blacklisted")
 		if Method == "FireServer" then
 		
 			tesrt:MakeRemoteEvent(Name,FullName,Args,Method)
@@ -911,11 +907,9 @@ end
 
 
 OnRemove = function(self, pos)
-	print(self, pos)
 	return true
 end
 OnInsert = function(self, vp, value)
-	print(self, vp, value)
 	wait()wait()wait()
 
 
@@ -1150,7 +1144,7 @@ function RemoteSpy()
 			
 			local function PostRemote()
 				ReadRemote(newArgs)
-				print("REMOTE PUTTED")
+			
 			end
 			PostRemote()
 			
