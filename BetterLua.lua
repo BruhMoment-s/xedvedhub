@@ -264,8 +264,9 @@ Min.TextColor3 = Color3.fromRGB(255, 255, 255)
 Min.TextScaled = true
 Min.TextSize = 14.000
 Min.TextWrapped = true
-ScrollingFrame.CanvasSize = UDim2.new(0,0,0,240)
+ScrollingFrame.CanvasSize = UDim2.new(0,0,0,-240)
 -- Scripts:
+
 local UMain = Main_2
 Intro.Visible = true
 UMain.Visible = false
@@ -474,7 +475,7 @@ function ui:Remotes()
 		RemoteButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 		RemoteButton.TextSize = 14.000
 		ScrollingFrame.CanvasSize = ScrollingFrame.CanvasSize + UDim2.new(0, 0, 0, 30)
-
+		ScrollingFrame.CanvasPosition = ScrollingFrame.CanvasPosition + Vector2.new(0,30)
 		local dir  = "In"
 
 
@@ -594,6 +595,7 @@ RemotePath:]].. Method .. [[(RemoteArgs)]]
 		RemoteFButton.TextSize = 14.000
 
 		ScrollingFrame.CanvasSize = ScrollingFrame.CanvasSize + UDim2.new(0, 0, 0, 30)
+		ScrollingFrame.CanvasPosition = ScrollingFrame.CanvasPosition + Vector2.new(0,30)
 		local dir  = "In"
 
 
